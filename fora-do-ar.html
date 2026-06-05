@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema Indisponível — SCA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: radial-gradient(ellipse at 50% 40%, #0f4a2a 0%, #051810 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .login-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(100,220,130,.18);
+      border-radius: 20px;
+      padding: 28px 36px 24px;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 12px 50px rgba(0,0,0,.6);
+      text-align: center;
+      animation: fadeUp .55s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(20px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    .login-icon {
+      width: 100px; height: 100px;
+      margin: 0 auto 6px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .login-icon img {
+      width: 150px; height: 150px; object-fit: contain;
+    }
+    .num-404 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: #EEE8AA;
+      line-height: 1;
+      margin-bottom: 4px;
+      letter-spacing: 2px;
+    }
+    h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.25rem; color: #e63946;
+      margin-bottom: .4rem; letter-spacing: 1px;
+    }
+    .mensagem {
+      color: rgba(245,255,250);
+      font-size: .82rem; 
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+      text-align: justify; /* ✅ Texto justificado aqui */
+    }
+    .btn-whats {
+      display: block; width: 100%; padding: 13px;
+      background: linear-gradient(135deg, #27ae60, #00e676);
+      border: none; border-radius: 11px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      color: #051810; cursor: pointer;
+      letter-spacing: 1.2px; text-decoration: none;
+      box-shadow: 0 4px 18px rgba(0,230,118,.38);
+      transition: transform .15s, box-shadow .15s;
+      margin-bottom: 8px;
+    }
+    .btn-whats:hover { transform: translateY(-2px); box-shadow: 0 7px 22px rgba(0,230,118,.5); }
+    .btn-tentar {
+      display: block; width: 100%; padding: 10px;
+      background: linear-gradient(135deg, #27ae60, #00e676);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 11px;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1rem; font-weight: 700; text-transform: uppercase;
+      color: #051810; cursor: pointer;
+      letter-spacing: 1px; text-decoration: none;
+      transition: all .2s;
+      line-height: 1.4;
+    }
+    .btn-tentar:hover { border-color: rgba(0,230,118,.4); color: rgba(0,230,118,.7); }
+    .rodape {
+      margin-top: 1.2rem;
+      font-size: .62rem;
+      color: rgba(255,255,255,.12);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+<div class="login-card">
+    <div class="login-icon">
+      <img src="https://hlkakdaulmenrcyarhgq.supabase.co/storage/v1/object/public/icones-sistema/SCA.png" alt="Logo SCA - Sistema de Consultoria Ambiental" />
+    </div>
+
+    <div class="num-404">404</div>
+
+ <h2>Sistema Indisponível</h2>
+ <p class="mensagem">
+      O sistema está temporariamente fora do ar.<br>
+      Para resolver, entre em contato com a nossa central de atendimento  regularize o seu acesso.
+ </p>
+
+    <a class="btn-whats" href="https://wa.me/5596991431959" target="_blank">
+      REGULARIZAR O ACESSO
+    </a>
+
+    <a class="btn-tentar" href="https://bioflorest.github.io/sca-empresa01/">
+	  Tentar novamente<br>
+    </a>
+	
+    <div class="rodape">
+      Bioflorest LTDA | CNPJ: 46.695.182/0001-63<br>
+      © 2026 – Todos os direitos reservados.
+    </div>
+
+  </div>
+</body>
+</html>
